@@ -1,8 +1,9 @@
 require('dotenv').config();
 console.log(process.env.PORT);
+PORT = process.env.PORT;
 
-const os = require('os');
-console.log(os.networkInterfaces());
+// const os = require('os');
+// console.log(os.networkInterfaces());
 
 
 const express = require('express');
@@ -11,7 +12,7 @@ const express = require('express');
 const app = express();
 
 // listen for requests
-app.listen(8080);
+app.listen(PORT);
 
 app.get('/', (req, res) => {
     // res.send('<p>home page</p>');
