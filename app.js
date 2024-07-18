@@ -1,6 +1,10 @@
 require('dotenv').config();
 console.log(process.env.PORT);
 
+const os = require('os');
+console.log(os.networkInterfaces());
+
+
 const express = require('express');
 
 // express app
